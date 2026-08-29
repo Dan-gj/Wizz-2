@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="StudentHub Student Management System for managing student information, results, grades and GPA.">
+    <title>StudentHub - Student Management System</title>
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER AND NAVIGATION
+    ============================== -->
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="logo">
+                Student<span>Hub</span>
+            </div>
+
+            <button class="menu-button" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <nav id="navigation">
+
+                <button class="nav-link active"
+                    onclick="showPage('home', this)">
+                    Home
+                </button>
+
+                <button class="nav-link"
+                    onclick="showPage('about', this)">
+                    About
+                </button>
+
+                <button class="nav-link"
+                    onclick="showPage('services', this)">
+                    Services
+                </button>
+
+                <button class="nav-link"
+                    onclick="showPage('gallery', this)">
+                    Gallery
+                </button>
+
+                <button class="nav-link"
+                    onclick="showPage('contact', this)">
+                    Contact
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         MAIN CONTENT
+    ============================== -->
+
+    <main>
+
+
+        <!-- ==================================================
+             PAGE 1: HOME
+        =================================================== -->
+
+        <section id="home" class="page active-page">
+
+            <div class="hero">
+
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <h1>
+                            Welcome to
+                            <span>Student Grade Management System</span>
+                        </h1>
+
+                        <p>
+                            A simple Student Management System designed
+                            to help students manage their academic
+                            information, courses, scores, grades and GPA.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <button class="btn btn-yellow"
+                                onclick="showPageById('services')">
+                                Manage Results
+                            </button>
+
+                            <button class="btn btn-primary"
+                                onclick="showPageById('about')">
+                                Learn More
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <section class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+
+                        <h2>Student Management System</h2>
+
+                        <p>
+                            Student Grade Management System provides simple tools for
+                            managing important academic information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="clock-box">
+
+                        <h3>Current Date and Time</h3>
+
+                        <p id="dateDisplay"></p>
+
+                        <div id="clock">
+                            00:00:00
+                        </div>
+
+                    </div>
+
+
+                    <div class="cards">
+
+                        <article class="card">
+
+                            <div class="card-icon">
+                                🎓
+                            </div>
+
+                            <h3>Student Information</h3>
+
+                            <p>
+                                Manage basic student information such as
+                                name, matriculation number, department
+                                and level.
+                            </p>
+
+                        </article>
+
+
+                        <article class="card">
+
+                            <div class="card-icon">
+                                📊
+                            </div>
+
+                            <h3>Result Management</h3>
+
+                            <p>
+                                Enter CA and examination scores and
+                                automatically calculate total scores
+                                and grades.
+                            </p>
+
+                        </article>
+
+
+                        <article class="card">
+
+                            <div class="card-icon">
+                                🧮
+                            </div>
+
+                            <h3>GPA / CGPA</h3>
+
+                            <p>
+                                Calculate GPA and understand academic
+                                performance using course credit units
+                                and grade points.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>About Student Grade Management</h3>
+
+                        <p id="homeInfo">
+                            StudentHub is a simple academic management
+                            website created to demonstrate the use of
+                            HTML, CSS and JavaScript in web development.
+                        </p>
+
+                        <br>
+
+                        <button class="btn btn-primary"
+                            onclick="toggleInformation()">
+                            Show / Hide More Information
+                        </button>
+
+                        <div id="moreInfo" style="display:none; margin-top:15px;">
+
+                            <p>
+                                The system can be used as a prototype
+                                for a school department or academic unit.
+                                It demonstrates student registration,
+                                score management, grading, GPA calculation,
+                                searching, gallery controls and interactive
+                                website features.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ==================================================
+             PAGE 2: ABOUT
+        =================================================== -->
+
+        <section id="about" class="page">
+
+            <div class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+
+                        <h2>About Student Grade Management System</h2>
+
+                        <p>
+                            Learn more about the Student Management System.
+                        </p>
+
+                    </div>
+
+
+                    <div class="list-box">
+
+                        <article>
+
+                            <h3>Purpose of the System</h3>
+
+                            <p>
+                                StudentHub was developed to provide a
+                                simple platform for students to manage
+                                academic information and monitor their
+                                academic performance.
+                            </p>
+
+                            <br>
+
+                            <p>
+                                The project demonstrates the practical
+                                application of HTML, CSS and JavaScript.
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <h3>Objectives</h3>
+
+                            <ol>
+
+                                <li>
+                                    Manage student information.
+                                </li>
+
+                                <li>
+                                    Record CA and examination scores.
+                                </li>
+
+                                <li>
+                                    Calculate total scores and grades.
+                                </li>
+
+                                <li>
+                                    Calculate GPA and CGPA.
+                                </li>
+
+                                <li>
+                                    Provide an easy-to-use interface.
+                                </li>
+
+                            </ol>
+
+                        </article>
+
+
+                        <article>
+
+                            <h3>Benefits</h3>
+
+                            <ul>
+
+                                <li>
+                                    Easy student record management.
+                                </li>
+
+                                <li>
+                                    Automatic grade calculation.
+                                </li>
+
+                                <li>
+                                    Faster academic performance checking.
+                                </li>
+
+                                <li>
+                                    Simple GPA calculation.
+                                </li>
+
+                                <li>
+                                    Responsive design for mobile devices.
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+
+                        <article>
+
+                            <h3>Technologies Used</h3>
+
+                            <ul>
+
+                                <li>HTML5</li>
+
+                                <li>CSS3</li>
+
+                                <li>JavaScript</li>
+
+                                <li>Responsive Web Design</li>
+
+                            </ul>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>Why Student Management?</h3>
+
+                        <p>
+                            Students deal with several courses,
+                            assessments, examinations and grades.
+                            A student management system can organize
+                            these records and make academic information
+                            easier to access.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PAGE 3: SERVICES / ACTIVITIES
+        =================================================== -->
+
+        <section id="services" class="page">
+
+            <div class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+
+                        <h2>Student Services & Activities</h2>
+
+                        <p>
+                            Use the tools below to manage student
+                            academic information.
+                        </p>
+
+                    </div>
+
+
+                    <!-- STUDENT INFORMATION FORM -->
+
+                    <div class="form-container">
+
+                        <h3>Student Information</h3>
+
+                        <br>
+
+                        <form id="studentForm"
+                            onsubmit="saveStudent(event)">
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="studentName">
+                                        Student Name
+                                    </label>
+
+                                    <input type="text"
+                                        id="studentName"
+                                        placeholder="Enter student name"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="matricNumber">
+                                        Matriculation Number
+                                    </label>
+
+                                    <input type="text"
+                                        id="matricNumber"
+                                        placeholder="Enter matric number"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="department">
+                                        Department
+                                    </label>
+
+                                    <input type="text"
+                                        id="department"
+                                        placeholder="Enter your department"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="level">
+                                        Level
+                                    </label>
+
+                                    <select id="level" required>
+
+                                        <option value="">
+                                            Select Level
+                                        </option>
+
+                                        <option>
+                                            100 Level
+                                        </option>
+
+                                        <option>
+                                            200 Level
+                                        </option>
+
+                                        <option>
+                                            300 Level
+                                        </option>
+
+                                        <option>
+                                            400 Level
+                                        </option>
+
+                                        <option>
+                                            500 Level
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group full">
+
+                                    <button class="btn btn-primary"
+                                        type="submit">
+
+                                        Save Student Information
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+
+                        <div id="studentMessage"
+                            class="message success-message">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RESULT ENTRY -->
+
+                    <br><br>
+
+                    <div class="form-container">
+
+                        <h3>Enter Student Result</h3>
+
+                        <p>
+                            Enter any course the student is offering.
+                            The system is not restricted to Computer
+                            Science courses.
+                        </p>
+
+                        <br>
+
+                        <form id="resultForm"
+                            onsubmit="addResult(event)">
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="courseCode">
+                                        Course Code
+                                    </label>
+
+                                    <input type="text"
+                                        id="courseCode"
+                                        placeholder="e.g. MTH 101"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="courseTitle">
+                                        Course Title
+                                    </label>
+
+                                    <input type="text"
+                                        id="courseTitle"
+                                        placeholder="Enter course title"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="creditUnit">
+                                        Credit Unit
+                                    </label>
+
+                                    <input type="number"
+                                        id="creditUnit"
+                                        min="1"
+                                        max="10"
+                                        placeholder="e.g. 3"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="caScore">
+                                        CA / Test Score
+                                    </label>
+
+                                    <input type="number"
+                                        id="caScore"
+                                        min="0"
+                                        max="40"
+                                        placeholder="0 - 40"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="examScore">
+                                        Examination Score
+                                    </label>
+
+                                    <input type="number"
+                                        id="examScore"
+                                        min="0"
+                                        max="60"
+                                        placeholder="0 - 60"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label>
+                                        Maximum Score
+                                    </label>
+
+                                    <input type="text"
+                                        value="100"
+                                        readonly>
+
+                                </div>
+
+
+                                <div class="form-group full">
+
+                                    <button class="btn btn-success"
+                                        type="submit">
+
+                                        Add Result
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+
+                        <div id="resultMessage"
+                            class="message success-message">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RESULT TABLE -->
+
+                    <div class="section-title"
+                        style="margin-top:60px;">
+
+                        <h2>Student Result</h2>
+
+                        <p>
+                            Search and view entered results.
+                        </p>
+
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <input type="text"
+                            id="resultSearch"
+                            placeholder="Search course..."
+                            onkeyup="searchResults()">
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Course Code</th>
+
+                                    <th>Course Title</th>
+
+                                    <th>Unit</th>
+
+                                    <th>CA</th>
+
+                                    <th>Exam</th>
+
+                                    <th>Total</th>
+
+                                    <th>Grade</th>
+
+                                    <th>Point</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="resultTable">
+
+                                <!-- Results will appear here -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- GPA CALCULATOR -->
+
+                    <div class="gpa-result">
+
+                        <h3>
+                            Current GPA:
+                            <span id="gpaValue">0.00</span>
+                        </h3>
+
+                        <p>
+                            GPA is calculated from the courses
+                            entered above.
+                        </p>
+
+                    </div>
+
+
+                    <br>
+
+                    <button class="btn btn-danger"
+                        onclick="clearResults()">
+
+                        Clear All Results
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PAGE 4: GALLERY
+        =================================================== -->
+
+        <section id="gallery" class="page">
+
+            <div class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+
+                        <h2>Student Gallery</h2>
+
+                        <p>
+                            Images representing students, learning
+                            and academic activities.
+                        </p>
+
+                    </div>
+
+
+                    <div class="gallery">
+
+                        <article class="gallery-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+                                alt="Students studying together">
+
+                            <div class="gallery-caption">
+                                Students Studying Together
+                            </div>
+
+                        </article>
+
+
+                        <article class="gallery-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=800&q=80"
+                                alt="University classroom">
+
+                            <div class="gallery-caption">
+                                Classroom Learning
+                            </div>
+
+                        </article>
+
+
+                        <article class="gallery-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                                alt="Student using computer">
+
+                            <div class="gallery-caption">
+                                Computer Laboratory
+                            </div>
+
+                        </article>
+
+
+                        <article class="gallery-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                                alt="Students working on a project">
+
+                            <div class="gallery-caption">
+                                Group Project
+                            </div>
+
+                        </article>
+
+
+                        <article class="gallery-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+                                alt="Teacher teaching students">
+
+                            <div class="gallery-caption">
+                                Academic Activity
+                            </div>
+
+                        </article>
+
+
+                        <article class="gallery-item">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+                                alt="Students collaborating">
+
+                            <div class="gallery-caption">
+                                Student Collaboration
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>Gallery Controls</h3>
+
+                        <p>
+                            The gallery above demonstrates images,
+                            alternative text, hover effects and
+                            responsive layout.
+                        </p>
+
+                        <br>
+
+                        <button class="btn btn-primary"
+                            onclick="changeGalleryMessage()">
+
+                            Change Gallery Message
+
+                        </button>
+
+                        <p id="galleryMessage"
+                            style="margin-top:15px; font-weight:bold;">
+
+                            Welcome to the Student Grade Management Gallery.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PAGE 5: CONTACT
+        =================================================== -->
+
+        <section id="contact" class="page">
+
+            <div class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+
+                        <h2>Contact Us</h2>
+
+                        <p>
+                            Contact the SGM administration.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-grid">
+
+
+                        <article class="contact-info">
+
+                            <h3>StudentHub Contact Information</h3>
+
+                            <p>
+                                📍 Address:
+                                Student Affairs Building,
+                                Main Campus
+                            </p>
+
+                            <p>
+                                📞 Phone:
+                                +234 800 000 0000
+                            </p>
+
+                            <p>
+                                📧 Email:
+                                studenthub@example.com
+                            </p>
+
+                            <p>
+                                🕒 Office Hours:
+                                Monday - Friday,
+                                8:00 AM - 4:00 PM
+                            </p>
+
+                        </article>
+
+
+                        <div class="form-container">
+
+                            <h3>Send a Message</h3>
+
+                            <br>
+
+                            <form id="contactForm"
+                                onsubmit="submitContact(event)">
+
+                                <div class="form-group">
+
+                                    <label for="contactName">
+                                        Your Name
+                                    </label>
+
+                                    <input type="text"
+                                        id="contactName"
+                                        placeholder="Enter your name"
+                                        required>
+
+                                </div>
+
+                                <br>
+
+                                <div class="form-group">
+
+                                    <label for="contactEmail">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email"
+                                        id="contactEmail"
+                                        placeholder="Enter your email"
+                                        required>
+
+                                </div>
+
+                                <br>
+
+                                <div class="form-group">
+
+                                    <label for="contactSubject">
+                                        Subject
+                                    </label>
+
+                                    <input type="text"
+                                        id="contactSubject"
+                                        placeholder="Enter subject"
+                                        required>
+
+                                </div>
+
+                                <br>
+
+                                <div class="form-group">
+
+                                    <label for="contactMessage">
+                                        Message
+                                    </label>
+
+                                    <textarea id="contactMessage"
+                                        rows="5"
+                                        placeholder="Write your message"
+                                        required></textarea>
+
+                                </div>
+
+                                <br>
+
+                                <button class="btn btn-primary"
+                                    type="submit">
+
+                                    Send Message
+
+                                </button>
+
+                            </form>
+
+
+                            <div id="contactResult"
+                                class="message success-message">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+
+    <footer>
+
+        <p>
+            <strong>Student Grade Management system</strong>
+            - Student Management System
+        </p>
+
+        <p>
+            Designed using HTML5, CSS3 and JavaScript
+        </p>
+
+        <div class="footer-links">
+
+            <button onclick="showPageById('home')">
+                Home
+            </button>
+
+            <button onclick="showPageById('about')">
+                About
+            </button>
+
+            <button onclick="showPageById('services')">
+                Services
+            </button>
+
+            <button onclick="showPageById('gallery')">
+                Gallery
+            </button>
+
+            <button onclick="showPageById('contact')">
+                Contact
+            </button>
+
+        </div>
+
+        <p>
+            &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- DARK MODE BUTTON -->
+
+    <button class="theme-btn"
+        onclick="toggleDarkMode()"
+        title="Change theme">
+
+        🌙
+
+    </button>
+
+</body>
+
+</html>
